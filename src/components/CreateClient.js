@@ -16,7 +16,7 @@ const CreateClient = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post(`https://crmtracker-api.sarankirthic.net/api/clients`, formData);
+            await axios.post(`https://crm-tracker-beta.vercel.app/api/clients`, formData);
             setMessage('Client created successfully!');
             setFormData({ clientname: '', clientcompany: '', clientlocation: '', contactperson: '', contactnumber: '', contactemail: '' });
         } catch (error) {
