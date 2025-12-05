@@ -16,7 +16,7 @@ const CreateClient = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post(`${API_BASE_URL}/clients`, formData);
+            await axios.post(`${ API_BASE_URL }/api/clients`, formData);
             setMessage('Client created successfully!');
             setFormData({ clientname: '', clientcompany: '', clientlocation: '', contactperson: '', contactnumber: '', contactemail: '' });
         } catch (error) {
