@@ -12,7 +12,7 @@ const ViewClients = () => {
 
     const fetchClients = async () => {
         try {
-            const response = await axios.get(`${API_BASE_URL}/api/clients`);
+            const response = await axios.get(`https://crmtracker-api.sarankirthic.net/api/clients`);
             setClients(response.data);
         } catch (error) {
             console.error('Error fetching clients:', error);
